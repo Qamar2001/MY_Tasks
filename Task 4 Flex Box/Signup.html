@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f1f1;
+            margin-top: 200px;
+            margin-left: 600px;
+        }
+        .form1
+        {
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #4671a1;
+            margin: 10px 10px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+            padding: 20px 25px;
+            width:50%;
+        }
+        
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .cancelbtn {
+            padding: 14px 20px;
+            background-color: #f44336;
+        }
+        
+        .cancelbtn,
+        .signupbtn {
+            float: left;
+            width: 50%;
+        }
+        
+        .container {
+            padding: 16px;
+            width: calc(100% - 36px);
+        }
+        
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        a {
+            color: bisque;
+        }
+        
+        @media screen and (max-width: 300px) {
+            .cancelbtn,
+            .signupbtn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="form1">
+    <h2>Signup Form</h2>
+        <div class="container">
+            <label><b>Name</b></label>
+            <input type="text" placeholder="Enter Name" name="name" required>
+            <label><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+            <input type="checkbox" checked="checked"> Remember me
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+            <div class="clearfix">
+                <a href="index.html">
+                <button type="button" class="cancelbtn">Cancel</button>
+                
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </a>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
