@@ -1,13 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+    function myfunction() {
+    const massage = document.getElementById("p01");
+    massage.innerHTML = "";
+    let x = document.getElementById("demo").value;
+    try{
+        if(x.trim() == "") throw "empty";
+        if(isNaN(x)) throw "not a number";
+        x = Number(x);
+        if(x < 5) throw "too low";
+        if(x > 10) throw "too high";
+        if(x>=5 && x<=10) massage.innerHTML = "Input is : " + x;
+    }
+    catch(err){
+        massage.innerHTML = "Input is " + err;
+    }
+
+}
+</script>
+    
+
 </head>
 <body>
-    <h1>Java Script Crash Course</h1>
-    <script src='main.js'></script>
+
+    <h1>My Javascrip</h1>
+    <p>My first paragraph.</p>
+    <input id = "demo" type="text">
+    <p id="p01"></p>
+    <button type="button" onclick="myfunction()">Test Input</button>
+
+  
 </body>
 </html>

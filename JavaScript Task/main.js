@@ -217,18 +217,18 @@
 // scope   block scope and function scope and global scope
 
 // block scope
-if(true){
-    const myname = 'Qammar'
-    console.log(myname)
-}
+// if(true){
+//     const myname = 'Qammar'
+//     console.log(myname)
+// }
 
-// function scope
-function greet(){
-    const myname = 'Qammar'
-    console.log(myname)
-}
-greet()
+// // function scope
+// function greet(){
+//     const myname = 'Qammar'
+//     console.log(myname)
+// }
+// greet()
 
-// global scope
-const myname = 'Qammar'
-console.log(myname)
+// // global scope
+// const myname = 'Qammar'
+// console.log(myname)
